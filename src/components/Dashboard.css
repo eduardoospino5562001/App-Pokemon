@@ -1,0 +1,95 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px;
+  }
+  
+  .data-grid-container {
+    flex: 1;
+    margin-bottom: 10px;
+  }
+  
+  .map-container {
+    height: 500px; 
+    width: 100%; 
+    position: relative;
+  }
+  
+  @media (min-width: 768px) {
+    .dashboard {
+      flex-direction: row;
+    }
+    
+    .data-grid-container {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+    
+    .map-container {
+      height: 500px; 
+      width: 100%; 
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .data-grid-container, .map-container {
+      width: 100%;
+    }
+  
+    .map-container {
+      height: 300px; 
+    }
+  }
+  
+  .logout-button {
+    margin-top: 20px;
+    padding: 0.7em;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .MuiDataGrid-root {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .MuiTextField-root {
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 767px) {
+    .MuiDataGrid-root {
+      font-size: 0.8em; /* Ajuste tamaño de la fuente para pantallas pequeñas */
+    }
+  
+    .MuiTextField-root {
+      width: 100%; /* Asegurar que el TextField ocupe el 100% del ancho */
+    }
+  
+    .MuiButton-root {
+      width: 100%; /* Asegurar que los botones ocupen el 100% del ancho */
+      margin-bottom: 10px; /* espacio entre los botones */
+    }
+  }
+  
