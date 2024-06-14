@@ -55,7 +55,7 @@ function Login() {
         <button type="submit">Ingresar</button>
       </form>
       <div className="login-footer">
-        <p>¿Olvidaste tu contraseña? <a href="#">Recupérala aquí</a></p>
+        <p>¿Olvidaste tu contraseña? {/*<a href="#">Recupérala aquí</a>*/}</p>
       </div>
     </div>
   );
